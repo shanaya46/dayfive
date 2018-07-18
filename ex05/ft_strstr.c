@@ -3,14 +3,12 @@
 
 char *ft_strcpy(char *str, char *to_find) {
 int i;
-int len = strlen(src);
-for (i = 0; src[i] != '\0'; i++) {
-    dest[i] = src[i];
+for (i = 0; str[i] != '\0'; i++) {
 }
 
-dest[i] = '\0';
+to_find[i] = '\0';
 
-return dest;
+return to_find;
 }
 
 int main () {

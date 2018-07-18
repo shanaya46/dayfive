@@ -13,6 +13,10 @@ for (i = 0; str[i] != '\0' ; i++) {
         break;
     }
 }
+
+if (len == 0) {
+    check = 1;
+}
   return check;
 }
 
