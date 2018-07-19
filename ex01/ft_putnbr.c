@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 void ft_putnbr (int nb){
-        printf ("%d", nb);
-        printf ("\n");
-    }
+     printf ("%d\n", nb);
+}
 
 
 int main() {

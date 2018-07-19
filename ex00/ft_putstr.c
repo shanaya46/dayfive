@@ -7,4 +7,4 @@ void ft_putstr(char *str){
 int main() {
    char str[8] = "Shanaya"; 
    ft_putstr (str);
- }
+}
