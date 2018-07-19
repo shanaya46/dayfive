@@ -1,20 +1,40 @@
 #include <stdio.h>
 #include <string.h>
 
-char *ft_strcpy(char *str, char *to_find) {
-int i;
-for (i = 0; str[i] != '\0'; i++) {
-}
+char *ft_strstr(char *str, char *to_find) {
+    int a, b, c;
 
-to_find[i] = '\0';
+    for (a = 0; str[a] != '\0'; a++) {
+        b = 0;
+        if (str[a] == to_find[b]) {
+            c = b + 1;
+            while (str[a] == to_find[b]) {
+                a++;
+                b++;
+            }
 
-return to_find;
+            if (to_find[b] == '\0') {
+                break;
+            }
+            else {
+                a = c;
+                c = 0;
+            }
+        }
+    }
+
+    if (b == '\0') {
+        return "The substring is not in the string";
+    }
+    else {
+        return to_find;
+    }
 }
 
 int main () {
-char str[10] = "Shanaya";
-char to_find[10] = "na";
+char str[100] = "Shanaya";
+char to_find[50] = "shan";
 
-printf("%s\n", ft_strcpy(str, to_find));
+printf("%s\n", ft_strstr(str, to_find));
 
 }
