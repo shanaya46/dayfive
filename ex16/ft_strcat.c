@@ -16,8 +16,8 @@ char *ft_strcat(char *dest, char *src) {
 
 
 int main () {
-    char src[20] = "source";
-    char dest[20] = "destination";
+    char src[20] = "rish";
+    char dest[20] = "shanaya";
 
     printf("%s\n", ft_strcat(dest, src));
 }

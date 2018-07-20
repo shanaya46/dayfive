@@ -33,7 +33,7 @@ char *ft_strstr(char *str, char *to_find) {
 
 int main () {
 char str[100] = "Shanaya";
-char to_find[50] = "shan";
+char to_find[50] = "an";
 
 printf("%s\n", ft_strstr(str, to_find));
 
